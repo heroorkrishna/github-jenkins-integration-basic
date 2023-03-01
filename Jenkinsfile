@@ -19,7 +19,6 @@ pipeline {
    }
    post {
 	always {
-	    echo 'The pipeline completed'
-     	    emailext body: 'summary' subject: 'Pipeline status ' to: 'heroorkrishna@gmail.com' 
+	    echo 'The pipeline completed' emailext body: 'summary' subject: 'Pipeline status ' to: 'heroorkrishna@gmail.com' 
 	}
 }
